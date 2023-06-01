@@ -150,24 +150,22 @@ _For more examples, please refer to the [Documentation](https://example.com)_
 
 
 
-<!-- ROADMAP -->
 ## Roadmap
 
-- [x] Add Changelog
-- [x] Add back to top links
+- [x] Create Readme.md 
+- [x] Create [Project Repo] (https://github.com/tonitoar/event.io-GENERAL-)
 - [ ] Add Additional Templates w/ Examples
 - [ ] Add "components" document to easily copy & paste sections of the readme
 - [ ] Multi-language Support
     - [ ] Chinese
     - [ ] Spanish
 
-See the [open issues](https://github.com/othneildrew/Best-README-Template/issues) for a full list of proposed features (and known issues).
+See the full [Height Control](https://height.app/HZgn9mMHKU/eventio---wd-ft-bcn-2023-pedro-toni-xavi) we used for a full list of proposed features (and known issues).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
 
-<!-- CONTRIBUTING -->
 ## Contributing
 
 Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**, but please bear in mind that this Project is the result of 2 intensive full time months and there's plenty of margin to improve. **So we would appreciate constructive feedback only**.
@@ -185,7 +183,7 @@ Don't forget to give the project a star! Thanks again!
 
 
 
-<!-- LICENSE -->
+
 ## License & Copyright.
 
 Distributed under the Ironhack License. All copyrights and intelectual property belong to the owners of the present Project. The owners may user their legal rights to defend the project at any time.
@@ -194,7 +192,7 @@ Distributed under the Ironhack License. All copyrights and intelectual property 
 
 
 
-<!-- CONTACT -->
+
 ## Contact
 
 Pedro Torres - [@kitschest_](https://twitter.com/kitschest_) - kitschestt@gmail.com 
