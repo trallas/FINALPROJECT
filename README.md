@@ -95,8 +95,8 @@ This section should list any major frameworks/libraries used to bootstrap your p
 
 * [![React][React.js]][React-url]
 * [![Express][Express.js]][Express-url]
-* [!Node][node.js][Node-url]
-* [![Tailwind][Tailwind.css]][Tailwind-url]
+* [!Node.js][node.js][Node-url]
+* [![Tailwind-css][Tailwind-css]][Tailwind-url]
 * [![Yarn][Yarn]][Yarn-url]
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
