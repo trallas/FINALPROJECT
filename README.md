@@ -199,9 +199,9 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 <!-- CONTACT -->
 ## Contact
 
-Pedro Torres - [@your_twitter](https://twitter.com/your_username) - email@example.com
+Pedro Torres - [@your_twitter](https://twitter.com/your_username) - kitschestt@gmail.com 
 
-Toni Torredemer [@your_twitter](https://twitter.com/your_username) - email@example.com
+Toni Torredemer  - toni.torredemer.argiles@gmail.com
 
 Xavier Trallero [@XTG1724](https://twitter.com/XTG1724) - xaviertralleroguillot@gmail.com
 
