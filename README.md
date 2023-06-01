@@ -135,6 +135,35 @@ _Below is an example of how you can instruct your audience on installing and set
    const API_KEY = 'ENTER YOUR API';
    ```
 
+### Setting up Models
+
+**Model #01: Event**
+- [ ] Title
+- [ ] Date
+- [ ] Event Description
+- [ ] Max Cap # of Attendees
+- [ ] Total # of Attendees
+- [ ] Image "URL"
+- [ ] Attendees {{type: Schema.Types.ObjectId...ref:"User"}}
+
+**Model #02: User**
+- [ ] _id
+- [ ] Created Events
+- [ ] Username
+- [ ] Email
+- [ ] Password
+
+
+**Model #03: Event_User_Quant**
+- [ ] idUser
+- [ ] idEvent
+- [ ] Quantity
+
+
+### Setting up Routes
+
+
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
@@ -154,7 +183,7 @@ _For more examples, please refer to the [Documentation](https://example.com)_
 
 - [x] Create Readme.md 
 - [x] Create [Project Repo](https://github.com/tonitoar/event.io-GENERAL-)
-- [ ] Create MongoDB Database
+- [x] Create MongoDB Database
 - [x] Create both Front and Back Routes
 - [x] Create and setup Models
     - [ ] Event
