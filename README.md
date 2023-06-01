@@ -95,7 +95,7 @@ This section should list any major frameworks/libraries used to bootstrap your p
 
 * [![React][React.js]][React-url]
 * [![Express][Express.js]][Express-url]
-* [!Node.js] [Express.js]][Express-url]
+* [!Node.js] [Node.js][Node-url]
 * [![Tailwind-css][Tailwind-css]][Tailwind-url]
 * [![Yarn][Yarn]][Yarn-url]
 
