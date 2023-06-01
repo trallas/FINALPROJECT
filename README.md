@@ -205,7 +205,7 @@ Toni Torredemer [@your_twitter](https://twitter.com/your_username) - email@examp
 
 Xavier Trallero [@XTG1724](https://twitter.com/XTG1724) - xaviertralleroguillot@gmail.com
 
-Project Link: [https://github.com/your_username/repo_name](https://github.com/your_username/repo_name)
+Project Link: [https://github.com/tonitoar/event.io-GENERAL-](https://github.com/tonitoar/event.io-GENERAL-)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
