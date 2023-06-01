@@ -245,7 +245,7 @@ https://github.com/tonitoar
 [React-url]: https://reactjs.org/
 [Express.js]: https://img.shields.io/badge/-Express-yellow
 [Express-url]: https://expressjs.com/
-[Node.js]: https://images.app.goo.gl/jea6pQYHTu4KEmDQ6
+[Node.js]: https://img.shields.io/badge/-Node.js-brightgreen
 [Node-url]: https://nodejs.org/es
 [Tailwind-css]: https://img.shields.io/badge/-Tailwind-lightgrey
 [Tailwind-url]: https://tailwindcss.com/
