@@ -95,11 +95,9 @@ This section should list any major frameworks/libraries used to bootstrap your p
 
 * [![React][React.js]][React-url]
 * [![Express][Express.js]][Express-url]
-* [!Node][node.js][Angular-url]
-* [![Svelte][Svelte.dev]][Svelte-url]
-* [![Laravel][Laravel.com]][Laravel-url]
-* [![Bootstrap][Bootstrap.com]][Bootstrap-url]
-* [![JQuery][JQuery.com]][JQuery-url]
+* [!Node][node.js][Node-url]
+* [![Tailwind][Tailwind.css]][Svelte-url]
+* [![Yarn][Yarn]][Yarn-url]
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -249,3 +247,7 @@ https://github.com/tonitoar
 [Express-url]: https://expressjs.com/
 [Node.js]: https://images.app.goo.gl/jea6pQYHTu4KEmDQ6
 [Node-url]: https://nodejs.org/es
+[Tailwind-css]: https://img.shields.io/badge/-Tailwind-lightgrey
+[Tailwind-url]: https://tailwindcss.com/
+[Yarn]: https://img.shields.io/badge/-Yarn-red
+[Yarn-url]: https://yarnpkg.com/
