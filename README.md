@@ -162,6 +162,23 @@ _Below is an example of how you can instruct your audience on installing and set
 
 ### Setting up Routes
 
+**GET ROUTES**
+
+- GET/events ---> res.json {{events}}
+  - [ ] Returns last 10 events
+- GET/events? ---> filter = =(req.query)
+  - [ ] Returns coincidences with filter applied
+- GET/events/:eventId ---> 
+  - [ ] Returns an event with populated buyers
+
+**POST ROUTES**
+
+- POST/events/:eventId/confirm
+  - [ ] Check that there's availability
+  - [ ] Update event with number of invited people and number of buyers or assistants
+  - [ ] Create an "event_user_quant"
+
+
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
