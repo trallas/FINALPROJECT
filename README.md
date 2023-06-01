@@ -226,7 +226,7 @@ Use this space to list resources you find helpful and would like to give credit 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 [contributors-shield]: https://img.shields.io/github/contributors/othneildrew/Best-README-Template.svg?style=for-the-badge
-[contributors-url]:https://github.com/trallas https://github.com/Kitchest https://github.com/tonitoar
+[contributors-url]:https://github.com/trallas;https://github.com/Kitchest;https://github.com/tonitoar
 
 [forks-shield]: https://img.shields.io/github/forks/othneildrew/Best-README-Template.svg?style=for-the-badge
 [forks-url]: https://github.com/othneildrew/Best-README-Template/network/members
