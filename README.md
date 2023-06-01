@@ -170,7 +170,7 @@ See the [open issues](https://github.com/othneildrew/Best-README-Template/issues
 <!-- CONTRIBUTING -->
 ## Contributing
 
-Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
+Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**, but please bear in mind that this Project is the result of 2 intensive full time months and there's plenty of margin to improve. So we would appreciate constructive feedback only.
 
 If you have a suggestion that would make this better, please fork the repo and create a pull request. You can also simply open an issue with the tag "enhancement".
 Don't forget to give the project a star! Thanks again!
@@ -186,9 +186,9 @@ Don't forget to give the project a star! Thanks again!
 
 
 <!-- LICENSE -->
-## License
+## License & Copyright.
 
-Distributed under the MIT License. See `LICENSE.txt` for more information.
+Distributed under the Ironhack License. All copyrights and intelectual property belong to the owners of the present Project. The owners may user their legal rights to defend the project at any time.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -206,10 +206,10 @@ Xavier Trallero [@XTG1724](https://twitter.com/XTG1724) - xaviertralleroguillot@
 Project Link: [https://github.com/tonitoar/event.io-GENERAL-](https://github.com/tonitoar/event.io-GENERAL-)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-h
 
 
-<!-- ACKNOWLEDGMENTS -->
+
+
 ## Acknowledgments
 
 Use this space to list resources you find helpful and would like to give credit to. I've included a few of my favorites to kick things off!
@@ -226,9 +226,7 @@ Use this space to list resources you find helpful and would like to give credit 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 [contributors-shield]: https://img.shields.io/github/contributors/othneildrew/Best-README-Template.svg?style=for-the-badge
-[contributors-url]:https://github.com/trallas
-https://github.com/Kitchest
-https://github.com/tonitoar
+[contributors-url]:https://github.com/trallas https://github.com/Kitchest https://github.com/tonitoar
 
 [forks-shield]: https://img.shields.io/github/forks/othneildrew/Best-README-Template.svg?style=for-the-badge
 [forks-url]: https://github.com/othneildrew/Best-README-Template/network/members
