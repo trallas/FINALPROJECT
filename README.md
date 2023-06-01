@@ -62,7 +62,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[!Eventio Screenshot][product-screenshot]
+[![Eventio Screenshot]][product-screenshot]
 
 "eventio" is an event booking app that allows users to discover and book various events in the city they live and love, filtering per several criterias like proximity, type of event, number of attendees, etc. The app aims to provide a seamless user experience and facilitate event management for both organizers and attendees.
 
