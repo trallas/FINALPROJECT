@@ -199,7 +199,7 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 <!-- CONTACT -->
 ## Contact
 
-Pedro Torres - [@your_twitter](https://twitter.com/your_username) - kitschestt@gmail.com 
+Pedro Torres - [@kitschest_](https://twitter.com/kitschest_) - kitschestt@gmail.com 
 
 Toni Torredemer  - toni.torredemer.argiles@gmail.com
 
@@ -245,7 +245,7 @@ https://github.com/tonitoar
 [product-screenshot]: ./public/images/eventio-demo.png
 [React.js]: https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB
 [React-url]: https://reactjs.org/
-[Express.js]: https://images.app.goo.gl/eFMQQEHKscJAHteUA
+[Express.js]: https://img.shields.io/badge/-Express-yellow
 [Express-url]: https://expressjs.com/
 [Node.js]: https://images.app.goo.gl/jea6pQYHTu4KEmDQ6
 [Node-url]: https://nodejs.org/es
