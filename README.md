@@ -210,12 +210,12 @@ Project Link: [https://github.com/tonitoar/event.io-GENERAL-](https://github.com
 
 
 
-## Acknowledgments
+## Acknowledgments & Recognition
 
-Use this space to list resources you find helpful and would like to give credit to. I've included a few of my favorites to kick things off!
+We could have not succeeded without the help of our teacher Mariona Roca and our Teacher Asssistant Yabel Rodriguez. Thank you for all your work!
 
-* [Choose an Open Source License](https://choosealicense.com)
-* [GitHub Emoji Cheat Sheet](https://www.webpagefx.com/tools/emoji-cheat-sheet)
+* [Mariona Roca](https://www.linkedin.com/in/marionaroca/)
+* [Yabel Rodriguez](https://www.linkedin.com/in/yabel-rodriguez/)
 * [Malven's Flexbox Cheatsheet](https://flexbox.malven.co/)
 * [Malven's Grid Cheatsheet](https://grid.malven.co/)
 * [Img Shields](https://shields.io)
