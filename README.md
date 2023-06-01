@@ -216,12 +216,6 @@ We could have not succeeded without the help of our teacher Mariona Roca and our
 
 * [Mariona Roca](https://www.linkedin.com/in/marionaroca/)
 * [Yabel Rodriguez](https://www.linkedin.com/in/yabel-rodriguez/)
-* [Malven's Flexbox Cheatsheet](https://flexbox.malven.co/)
-* [Malven's Grid Cheatsheet](https://grid.malven.co/)
-* [Img Shields](https://shields.io)
-* [GitHub Pages](https://pages.github.com)
-* [Font Awesome](https://fontawesome.com)
-* [React Icons](https://react-icons.github.io/react-icons/search)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
