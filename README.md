@@ -153,12 +153,13 @@ _For more examples, please refer to the [Documentation](https://example.com)_
 ## Roadmap
 
 - [x] Create Readme.md 
-- [x] Create [Project Repo] (https://github.com/tonitoar/event.io-GENERAL-)
-- [ ] Add Additional Templates w/ Examples
-- [ ] Add "components" document to easily copy & paste sections of the readme
-- [ ] Multi-language Support
-    - [ ] Chinese
-    - [ ] Spanish
+- [x] Create [Project Repo](https://github.com/tonitoar/event.io-GENERAL-)
+- [ ] Create MongoDB Database
+- [x] Create both Front and Back Routes
+- [x] Create and setup Models
+    - [ ] Event
+    - [ ] User
+- [ ] Add design
 
 See the full [Height Control](https://height.app/HZgn9mMHKU/eventio---wd-ft-bcn-2023-pedro-toni-xavi) we used for a full list of proposed features (and known issues).
 
