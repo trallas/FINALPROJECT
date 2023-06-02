@@ -215,10 +215,10 @@ _Below is an example of how you can instruct your audience on installing and set
 eliminate from model 3 and update model 1 (buyeer,invitados, update buyer array)
 - POST/admin/events/create
 creates model 1 event
-- POST/admin/events/:eventsId/cancel
+- POST/admin/events/:eventId/cancel
 model 3
 update model 1 is cancelled, seleccionate buyers and send email to each one. cancelled true
-- POST/admin/events/:eventsId/edit
+- POST/admin/events/:eventId/edit
 if admin updates event, nodemailer 
 - POST/events/:eventId/confirm
   - [ ] Check that there's availability
