@@ -31,8 +31,6 @@
 </div>
 
 
-
-<!-- TABLE OF CONTENTS -->
 <details>
   <summary>Table of Contents</summary>
   <ol>
@@ -59,7 +57,6 @@
 
 
 
-<!-- ABOUT THE PROJECT -->
 ## About The Project
 
 [![Product Name Screen Shot][product-screenshot]](https://example.com)
@@ -178,6 +175,12 @@ _Below is an example of how you can instruct your audience on installing and set
 - /admin/:eventId/edit
 
 ### Back - End
+
+| Method | Endpoint                    | Require                                             | Response (200)                                                        | Action                                                                    |
+| :----: | --------------------------- | --------------------------------------------------- |---------------------------------------------------------------------- | ------------------------------------------------------------------------- |
+| POST   | /signup                     | const { username, email, password } = req.body      | json({user: user})                                                    | Registers the user in the database and returns the logged in user.        |
+| POST   | /login                      | const { email, password } = req.body                | json({authToken: authToken})                                          | Logs in a user already registered.                                        |
+
 
 **GET ROUTES**
 
