@@ -140,15 +140,17 @@ _Below is an example of how you can instruct your audience on installing and set
 **Model #01: Event**
 - [ ] Title
 - [ ] Date
+- [ ] Location
 - [ ] Event Description
-- [ ] Max Cap # of Attendees
+- [ ] Max Capacity # of Attendees
 - [ ] Total # of Attendees
 - [ ] Image "URL"
-- [ ] Attendees {{type: Schema.Types.ObjectId...ref:"User"}}
+- [ ] Buyers {type: Schema.Types.ObjectId...ref:"User"}
+- [ ] is cancelled
 
 **Model #02: User**
-- [ ] _id
-- [ ] Created Events {{type: Schema.Types.ObjectId...ref:"Events"}}
+- ([ ] _id)
+- [ ] Created Events {type: Schema.Types.ObjectId...ref:"Events"}
 - [ ] Username
 - [ ] Email
 - [ ] Password
