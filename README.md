@@ -314,7 +314,7 @@ We could have not succeeded without the help of our teacher Mariona Roca and our
 [Express-url]: https://expressjs.com/
 [Node.js]: https://img.shields.io/badge/-Node.js-brightgreen
 [Node-url]: https://nodejs.org/es
-[Tailwind-css]: https://img.shields.io/badge/-Tailwind-lightgrey
+[Tailwind-css]: https://img.shields.io/badge/-Tailwind-blue
 [Tailwind-url]: https://tailwindcss.com/
 [Yarn]: https://img.shields.io/badge/-Yarn-red
 [Yarn-url]: https://yarnpkg.com/
