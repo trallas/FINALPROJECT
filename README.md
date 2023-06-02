@@ -149,7 +149,7 @@ _Below is an example of how you can instruct your audience on installing and set
 - [ ] is cancelled
 
 **Model #02: User**
-- ([ ] _id)
+- [ ] (_id)
 - [ ] Created Events {type: Schema.Types.ObjectId...ref:"Events"}
 - [ ] Username
 - [ ] Email
