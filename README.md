@@ -181,7 +181,13 @@ _Below is an example of how you can instruct your audience on installing and set
 | POST   | auth/signup                     | const { username, email, password } = req.body      | json({user: user})                                                    | Registers the user in the database and returns the logged in user.        |
 | POST   | auth/login                      | const { email, password } = req.body                | json({authToken: authToken})                                          | Logs in a user already registered.                                        |
 | POST   | verify                      | const { email, password } = req.body                | json({authToken: authToken})                                          | Logs in a user already registered.                                        |
+| POST   | user/:eventId/unnatend                      | const { email, password } = req.body                | json({authToken: authToken})                                          | Logs in a user already registered.                                        |
 | POST   | user/:eventId/cancel                      | const { email, password } = req.body                | json({authToken: authToken})                                          | Logs in a user already registered.                                        |
+| POST   | user/events/create                      | const { email, password } = req.body                | json({authToken: authToken})                                          | Logs in a user already registered.                                        |
+| POST   | /admin/events/:eventsId/edit                      | const { email, password } = req.body                | json({authToken: authToken})                                          | Logs in a user already registered.                                        |
+| POST   | user/events/:eventId/confirm                      | const { email, password } = req.body                | json({authToken: authToken})                                          | Logs in a user already registered.                                        |
+| POST   | events/:eventId/confirm                      | const { email, password } = req.body                | json({authToken: authToken})                                          | Logs in a user already registered.                                        |
+
 
 
 **GET ROUTES**
