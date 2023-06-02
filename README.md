@@ -154,7 +154,6 @@ _Below is an example of how you can instruct your audience on installing and set
 - [ ] Username
 - [ ] Email
 - [ ] Password
-- [ ] Code
 - [ ] isAdmin
 
 
@@ -170,45 +169,52 @@ _Below is an example of how you can instruct your audience on installing and set
 
 - /signup  (publicview)
 - /login (publicview)
-- (/logout) (publicview)
+- (/logout) (privateview)
 - /  --->mainpage (publicview)
 - event/:eventId (publicview)
 - /user/:userId (privateview) This page will be only available to current userId
 - /admin
 - /admin/event/create
 - /admin/:eventId/edit
-- /admin/events/:eventId
 
 ### Back - End
 
 **GET ROUTES**
 
-- GET/events ---> res.json {{events}}
-  - [ ] Returns last 10 events
+- GET/events ---> res.json ({{events}})
+  - [ ] Returns last 10 events 
+  if request.query is empty, it will return the last 10. If there's a filter, it will return filter applied coincidences
 - GET/events? ---> filter = =(req.query)
   - [ ] Returns coincidences with filter applied
 - GET/events/:eventId ---> 
   - [ ] Returns an event with populated buyers
 - GET/user/:userId --->
   - [ ] Returns all the user events
+  Model 3 Event_User_Quant
 - GET/admin/events --->
   - [ ] Returns all admin events
+  Model 2 created events
 
 **POST ROUTES**
 
 - POST/auth/signup
 - POST/auth/login
 - POST/auth/verify
-- POST/events/:eventId/delete
+- POST/user/:eventId/unnatend
+eliminate from model 3 and update model 1 (buyeer,invitados, update buyer array)
 - POST/admin/events/create
+creates model 1 event
 - POST/admin/events/:eventsId/cancel
+model 3
+update model 1 is cancelled, seleccionate buyers and send email to each one. cancelled true
 - POST/admin/events/:eventsId/edit
+if admin updates event, nodemailer 
 - POST/events/:eventId/confirm
   - [ ] Check that there's availability
-  - [ ] Update event with number of invited people and number of buyers or assistants
+  - [ ] Update event with number of invited people and userid buyer array to let them know.
   - [ ] Create an "event_user_quant"
 
-
+if aforo - invitats >= ticket que demanes
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
