@@ -176,21 +176,30 @@ _Below is an example of how you can instruct your audience on installing and set
 
 ### Back - End
 
+**GET Routes**
+| Method | Endpoint                    | Require                                             | Response (200)                                                        | Action                                                                    |
+| :----: | --------------------------- | --------------------------------------------------- |---------------------------------------------------------------------- | ------------------------------------------------------------------------- |
+| GET   | /events                    | |                 | Registers the user in the database and returns the logged in user.        |
+| GET   | /events?                    |  |               | Registers the user in the database and returns the logged in user.        |
+| GET   | /events:eventID                 | |                                                     | Registers the user in the database and returns the logged in user.        |
+| GET   | /user/userId                    |       |                                                     | Registers the user in the database and returns the logged in user.        |
+| GET   | admin/events                     |       |                                                     | Registers the user in the database and returns the logged in user.        |
+
+**Back Routes**
 | Method | Endpoint                    | Require                                             | Response (200)                                                        | Action                                                                    |
 | :----: | --------------------------- | --------------------------------------------------- |---------------------------------------------------------------------- | ------------------------------------------------------------------------- |
 | POST   | auth/signup                     | const { username, email, password } = req.body      | json({user: user})                                                    | Registers the user in the database and returns the logged in user.        |
-| POST   | auth/login                      | const { email, password } = req.body                | json({authToken: authToken})                                          | Logs in a user already registered.                                        |
-| POST   | verify                      | |  | Logs in a user already registered.                                        |
-| POST   | user/:eventId/unnatend                      | const { email, password } = req.body                | json({authToken: authToken})                                          | Logs in a user already registered.                                        |
-| POST   | user/:eventId/cancel                      | const { email, password } = req.body                | json({authToken: authToken})                                          | Logs in a user already registered.                                        |
-| POST   | user/events/create                      | const { email, password } = req.body                | json({authToken: authToken})                                          | Logs in a user already registered.                                        |
-| POST   | /admin/events/:eventsId/edit                      | const { email, password } = req.body                | json({authToken: authToken})                                          | Logs in a user already registered.                                        |
-| POST   | user/events/:eventId/confirm                      | const { email, password } = req.body                | json({authToken: authToken})                                          | Logs in a user already registered.                                        |
-| POST   | events/:eventId/confirm                      | const { email, password } = req.body                | json({authToken: authToken})                                          | Logs in a user already registered.                                        |
+| POST   | auth/login                      | const { email, password } = req.body                |                                          | Logs in a user already registered.                                        |
+| POST   | verify                      | |   | Logs in a user already registered.                                        |
+| POST   | user/:eventId unnatend                      |                 |                                          | Logs in a user already registered.                                        |
+| POST   | user/:eventId/cancel                      | |                                           | Logs in a user already registered.                                        |
+| POST   | user/events/create                      |  |                                            | Logs in a user already registered.                                        |
+| POST   | /admin/events/:eventsId/edit                      |  |                                            | Logs in a user already registered.                                        |
+| POST   | user/events/:eventId/confirm                      | |                                           | Logs in a user already registered.                                        |
+| POST   | events/:eventId/confirm                      | |                                            | Logs in a user already registered.                                        |
 
 
-
-**GET ROUTES**
+------
 
 - GET/events ---> res.json ({{events}})
   - [ ] Returns last 10 events 
@@ -206,7 +215,6 @@ _Below is an example of how you can instruct your audience on installing and set
   - [ ] Returns all admin events
   Model 2 created events
 
-**POST ROUTES**
 
 - POST/auth/signup
 - POST/auth/login
