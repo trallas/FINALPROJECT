@@ -3,7 +3,6 @@
 
 [![Contributors][contributors-shield]][contributors-url]
 [![Forks][forks-shield]][forks-url]
-[![Stargazers][stars-shield]][stars-url]
 [![Issues][issues-shield]][issues-url]
 [![LinkedIn][linkedin-shield]][linkedin-url]
 
@@ -165,15 +164,29 @@ _Below is an example of how you can instruct your audience on installing and set
 
 ### Front - End
 
-- /signup  (publicview)
-- /login (publicview)
-- (/logout) (privateview)
-- /  --->mainpage (publicview)
-- event/:eventId (publicview)
-- /user/:userId (privateview) This page will be only available to current userId
-- /admin
-- /admin/event/create
-- /admin/:eventId/edit
+## Routes
+| Route                | Privacy         | Renders                  |
+| -------------------- | :-------------: | ------------------------ |
+| /                    | public          | HomePage                 |
+| /signup              | public          | SignupPage               |
+| /login               | public          | LoginPage                |
+| /about               | public          | ResumePage               |
+| /profile             | private (user)  | UserProfilePage          |
+| /logout             | private (user)  | UserProfilePage          |
+| /event/:eventId             | public (user)  | UserProfilePage          |
+| /user/:userId             | private (user)  | UserProfilePage          |
+| /admin             | private (user)  | UserProfilePage          |
+| /admin/event/create             | private (user)  | UserProfilePage          |
+| /admin/:eventId/edit             | private (user)  | UserProfilePage          |
+|      ...        |   |           |
+
+## Components
+- Navbar
+- OrderCard
+- PrivateRoute
+
+
+
 
 ### Back - End
 
