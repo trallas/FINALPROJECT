@@ -11,7 +11,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/tonitoar/event.io-GENERAL-">
-    <img src="./public/images/eventiofirstlogo.png" alt="Logo" width="80" height="80">
+    <img src="./public/images/readme-logo2.png" alt="Logo" width="80" height="80">
   </a>
 
   <h3 align="center">README</h3>
@@ -178,8 +178,8 @@ _Below is an example of how you can instruct your audience on installing and set
 
 | Method | Endpoint                    | Require                                             | Response (200)                                                        | Action                                                                    |
 | :----: | --------------------------- | --------------------------------------------------- |---------------------------------------------------------------------- | ------------------------------------------------------------------------- |
-| POST   | /signup                     | const { username, email, password } = req.body      | json({user: user})                                                    | Registers the user in the database and returns the logged in user.        |
-| POST   | /login                      | const { email, password } = req.body                | json({authToken: authToken})                                          | Logs in a user already registered.                                        |
+| POST   | auth/signup                     | const { username, email, password } = req.body      | json({user: user})                                                    | Registers the user in the database and returns the logged in user.        |
+| POST   | auth/login                      | const { email, password } = req.body                | json({authToken: authToken})                                          | Logs in a user already registered.                                        |
 
 
 **GET ROUTES**
