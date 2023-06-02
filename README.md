@@ -148,10 +148,12 @@ _Below is an example of how you can instruct your audience on installing and set
 
 **Model #02: User**
 - [ ] _id
-- [ ] Created Events
+- [ ] Created Events {{type: Schema.Types.ObjectId...ref:"Events"}}
 - [ ] Username
 - [ ] Email
 - [ ] Password
+- [ ] Code
+- [ ] isAdmin
 
 
 **Model #03: Event_User_Quant**
@@ -162,6 +164,21 @@ _Below is an example of how you can instruct your audience on installing and set
 
 ### Setting up Routes
 
+### Front - End
+
+- /signup  (publicview)
+- /login (publicview)
+- (/logout) (publicview)
+- /  --->mainpage (publicview)
+- event/:eventId (publicview)
+- /user/:userId (privateview) This page will be only available to current userId
+- /admin
+- /admin/event/create
+- /admin/:eventId/edit
+- /admin/events/:eventId
+
+### Back - End
+
 **GET ROUTES**
 
 - GET/events ---> res.json {{events}}
@@ -170,9 +187,20 @@ _Below is an example of how you can instruct your audience on installing and set
   - [ ] Returns coincidences with filter applied
 - GET/events/:eventId ---> 
   - [ ] Returns an event with populated buyers
+- GET/user/:userId --->
+  - [ ] Returns all the user events
+- GET/admin/events --->
+  - [ ] Returns all admin events
 
 **POST ROUTES**
 
+- POST/auth/signup
+- POST/auth/login
+- POST/auth/verify
+- POST/events/:eventId/delete
+- POST/admin/events/create
+- POST/admin/events/:eventsId/cancel
+- POST/admin/events/:eventsId/edit
 - POST/events/:eventId/confirm
   - [ ] Check that there's availability
   - [ ] Update event with number of invited people and number of buyers or assistants
