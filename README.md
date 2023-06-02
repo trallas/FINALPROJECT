@@ -137,6 +137,7 @@ _Below is an example of how you can instruct your audience on installing and set
 **Model #01: Event**
 - [ ] Title
 - [ ] Date
+- [ ] Hour
 - [ ] Location
 - [ ] Event Description
 - [ ] Max Capacity # of Attendees
