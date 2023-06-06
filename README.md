@@ -144,6 +144,7 @@ _Below is an example of how you can instruct your audience on installing and set
 - [ ] Image "URL"
 - [ ] Buyers {type: Schema.Types.ObjectId...ref:"User"}
 - [ ] is cancelled
+- [ ] owner {type:Schema.Type.ObjectId...ref:"User"}
 
 **Model #02: User**
 - [ ] (_id)
@@ -193,24 +194,24 @@ _Below is an example of how you can instruct your audience on installing and set
 **GET Routes**
 | Method | Endpoint                    | Require                                             | Response (200)                                                        | Action                                                                    |
 | :----: | --------------------------- | --------------------------------------------------- |---------------------------------------------------------------------- | ------------------------------------------------------------------------- |
-| GET   | /events                    | |                 | Registers the user in the database and returns the logged in user.        |
-| GET   | /events?                    |  |               | Registers the user in the database and returns the logged in user.        |
-| GET   | /events:eventID                 | |                                                     | Registers the user in the database and returns the logged in user.        |
-| GET   | /user/userId                    |       |                                                     | Registers the user in the database and returns the logged in user.        |
-| GET   | admin/events                     |       |                                                     | Registers the user in the database and returns the logged in user.        |
+| GET   | /events                    | |                 | Returns the last 10 events  created.      |
+| GET   | /events?                    |  |               | Returns the last 10 events  created but with filters applied.     |
+| GET   | /events:eventID                 | |                                                     | Returns events with the data assigned to the event, with info like buyers, soldout etc.        |
+| GET   | /user/userId                    |       |                                                     | Returns the events of the user.    |
+| GET   | admin/events                     |       |                                                     | Returns all the events created by that admin.|
 
 **Back Routes**
 | Method | Endpoint                    | Require                                             | Response (200)                                                        | Action                                                                    |
 | :----: | --------------------------- | --------------------------------------------------- |---------------------------------------------------------------------- | ------------------------------------------------------------------------- |
 | POST   | auth/signup                     | const { username, email, password } = req.body      | json({user: user})                                                    | Registers the user in the database and returns the logged in user.        |
 | POST   | auth/login                      | const { email, password } = req.body                |                                          | Logs in a user already registered.                                        |
-| POST   | verify                      | |   | Logs in a user already registered.                                        |
-| POST   | user/:eventId unnatend                      |                 |                                          | Logs in a user already registered.                                        |
-| POST   | user/:eventId/cancel                      | |                                           | Logs in a user already registered.                                        |
-| POST   | user/events/create                      |  |                                            | Logs in a user already registered.                                        |
-| POST   | /admin/events/:eventsId/edit                      |  |                                            | Logs in a user already registered.                                        |
-| POST   | user/events/:eventId/confirm                      | |                                           | Logs in a user already registered.                                        |
-| POST   | events/:eventId/confirm                      | |                                            | Logs in a user already registered.                                        |
+| POST   | verify                      | |   | Verifies that the user trying to log in is already registered and has a valid account, or that its not registered.                                        |
+| POST   | user/:eventId unnatend                      |                 |                                          | Shows all the events filtered by filters to that particular user.                                       |
+| POST   | user/:eventId/cancel                      | |                                           | Cancel the attendance of the user in that event.                                       |
+| POST   | user/events/create                      |  |                                            | User creates an event.
+| POST   | /admin/events/:eventsId/edit                      |  |                                            | Allows admin to edit or modify the event filtered by filters and ID.                                      |
+| POST   | user/events/:eventId/confirm                      | |                                           | Shows the events that the user will attend and has confirmed assistance.                                        |
+| POST   | events/:eventId/confirm                      | |                                            | Shows the events that have attendancy and have been confirmed.                                        |
 
 
 ------
