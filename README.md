@@ -160,6 +160,12 @@ _Below is an example of how you can instruct your audience on installing and set
 - [ ] idEvent
 - [ ] Quantity
 
+**Model #04: Images**
+
+- [ ] id_User
+- [ ] Title
+- [ ] image_URL
+
 
 ### Setting up Routes
 
