@@ -353,7 +353,7 @@ We could have not succeeded without the help of our teacher Mariona Roca and our
 [license-url]: https://github.com/othneildrew/Best-README-Template/blob/master/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://www.linkedin.com/company/eventio-online/
-[product-screenshot]: ./public/images/eventio-demo.png
+[product-screenshot]: ./public/images/Captura%20de%20pantalla%202023-06-08%20a%20las%2020.49.19.png
 [React.js]: https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB
 [React-url]: https://reactjs.org/
 [Express.js]: https://img.shields.io/badge/-Express-yellow
