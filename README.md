@@ -126,45 +126,47 @@ _Below is an example of how you can instruct your audience on installing and set
    ```sh
    npm install
    ```
-4. Enter your API in `config.js`
-   ```js
-   const API_KEY = 'ENTER YOUR API';
+
+4. Install YARN packages
+   ```sh
+   yarn install
    ```
 
 ### Setting up Models
 
 **Model #01: Event**
-- [ ] Title
-- [ ] Date
-- [ ] Hour
-- [ ] Location
-- [ ] Event Description
-- [ ] Max Capacity # of Attendees
-- [ ] Total # of Attendees
-- [ ] Image "URL"
-- [ ] Buyers {type: Schema.Types.ObjectId...ref:"User"}
-- [ ] is cancelled
-- [ ] owner {type:Schema.Type.ObjectId...ref:"User"}
+- [x] Title
+- [x] Date
+- [x] Hour
+- [x] Location
+- [x] Event Description
+- [x] Max Capacity # of Attendees
+- [x] Total # of Attendees
+- [x] Image "URL"
+- [x] Buyers {type: Schema.Types.ObjectId...ref:"User"}
+- [x] is cancelled
+- [x] owner {type:Schema.Type.ObjectId...ref:"User"}
+- [x] Price
 
 **Model #02: User**
-- [ ] (_id)
-- [ ] Created Events {type: Schema.Types.ObjectId...ref:"Events"}
-- [ ] Username
-- [ ] Email
-- [ ] Password
-- [ ] isAdmin
+- [x] (_id)
+- [x] Created Events {type: Schema.Types.ObjectId...ref:"Events"}
+- [x] Username
+- [x] Email
+- [x] Password
+- [x] isAdmin
 
 
 **Model #03: Event_User_Quant**
-- [ ] idUser
-- [ ] idEvent
-- [ ] Quantity
+- [x] idUser
+- [x] idEvent
+- [x] Quantity
 
 **Model #04: Images**
 
-- [ ] id_User
-- [ ] Title
-- [ ] image_URL
+- [x] id_User
+- [x] Title
+- [x] image_URL
 
 
 ### Setting up Routes
@@ -201,16 +203,17 @@ _Below is an example of how you can instruct your audience on installing and set
 | Method | Endpoint                    | Require                                             | Response (200)                                                        | Action                                                                    |
 | :----: | --------------------------- | --------------------------------------------------- |---------------------------------------------------------------------- | ------------------------------------------------------------------------- |
 | GET   | /events                    | |                 | Returns the last 10 events  created.      |
-| GET   | /events?                    |  |               | Returns the last 10 events  created but with filters applied.     |
+| GET   | /profile                    | |                 | Displays profile from user.      |
 | GET   | /events:eventID                 | |                                                     | Returns events with the data assigned to the event, with info like buyers, soldout etc.        |
-| GET   | /user/userId                    |       |                                                     | Returns the events of the user.    |
+| GET   | /admin/event/:id                   |       |                                                     | Returns the events of the admin by Id.    |
 | GET   | admin/events                     |       |                                                     | Returns all the events created by that admin.|
 
 **Back Routes**
 | Method | Endpoint                    | Require                                             | Response (200)                                                        | Action                                                                    |
 | :----: | --------------------------- | --------------------------------------------------- |---------------------------------------------------------------------- | ------------------------------------------------------------------------- |
 | POST   | auth/signup                     | const { username, email, password } = req.body      | json({user: user})                                                    | Registers the user in the database and returns the logged in user.        |
-| POST   | auth/login                      | const { email, password } = req.body                |                                          | Logs in a user already registered.                                        |
+| POST   | auth/login                      | const { email, password } = req.body                |                                          | Logs in a user already registered.     
+| POST   | auth/logout                      |                 |                                          | Logs user out registered.                                    |
 | POST   | verify                      | |   | Verifies that the user trying to log in is already registered and has a valid account, or that its not registered.                                        |
 | POST   | user/:eventId unnatend                      |                 |                                          | Shows all the events filtered by filters to that particular user.                                       |
 | POST   | user/:eventId/cancel                      | |                                           | Cancel the attendance of the user in that event.                                       |
@@ -218,59 +221,12 @@ _Below is an example of how you can instruct your audience on installing and set
 | POST   | /admin/events/:eventsId/edit                      |  |                                            | Allows admin to edit or modify the event filtered by filters and ID.                                      |
 | POST   | user/events/:eventId/confirm                      | |                                           | Shows the events that the user will attend and has confirmed assistance.                                        |
 | POST   | events/:eventId/confirm                      | |                                            | Shows the events that have attendancy and have been confirmed.                                        |
+| POST   | api/upload                      |         |                                          | Route to upload images to Cloudinary.
 
 
 ------
 
-- GET/events ---> res.json ({{events}})
-  - [ ] Returns last 10 events 
-  if request.query is empty, it will return the last 10. If there's a filter, it will return filter applied coincidences
-- GET/events? ---> filter = =(req.query)
-  - [ ] Returns coincidences with filter applied
-- GET/events/:eventId ---> 
-  - [ ] Returns an event with populated buyers
-- GET/user/:userId --->
-  - [ ] Returns all the user events
-  Model 3 Event_User_Quant
-- GET/admin/events --->
-  - [ ] Returns all admin events
-  Model 2 created events
-
-
-- POST/auth/signup
-- POST/auth/login
-- POST/auth/verify
-- POST/user/:eventId/unnatend
-eliminate from model 3 and update model 1 (buyeer,invitados, update buyer array)
-- POST/admin/events/create
-creates model 1 event
-- POST/admin/events/:eventId/cancel
-model 3
-update model 1 is cancelled, seleccionate buyers and send email to each one. cancelled true
-- POST/admin/events/:eventId/edit
-if admin updates event, nodemailer 
-- POST/events/:eventId/confirm
-  - [ ] Check that there's availability
-  - [ ] Update event with number of invited people and userid buyer array to let them know.
-  - [ ] Create an "event_user_quant"
-
-if aforo - invitats >= ticket que demanes
-
-
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
-
-<!-- USAGE EXAMPLES -->
-## Usage
-
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
-
-_For more examples, please refer to the [Documentation](https://example.com)_
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
 
 ## Roadmap
 
@@ -279,9 +235,9 @@ _For more examples, please refer to the [Documentation](https://example.com)_
 - [x] Create MongoDB Database
 - [x] Create both Front and Back Routes
 - [x] Create and setup Models
-    - [ ] Event
-    - [ ] User
-- [ ] Add design
+    - [x] Event
+    - [x] User
+- [x] Add design
 
 See the full [Height Control](https://height.app/HZgn9mMHKU/eventio---wd-ft-bcn-2023-pedro-toni-xavi) we used for a full list of proposed features (and known issues).
 
@@ -333,7 +289,7 @@ Project Link: [https://github.com/tonitoar/event.io-GENERAL-](https://github.com
 
 ## Acknowledgments & Recognition
 
-We could have not succeeded without the help of our teacher Mariona Roca and our Teacher Asssistant Yabel Rodriguez. Thank you for all your work!
+We could have not succeeded without the help of our teachers Mariona Roca and Yabel Rodriguez. Thank you for all your work!
 
 * [Mariona Roca](https://www.linkedin.com/in/marionaroca/)
 * [Yabel Rodriguez](https://www.linkedin.com/in/yabel-rodriguez/)
