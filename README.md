@@ -16,7 +16,7 @@
   <h3 align="center">README</h3>
 
   <p align="center">
-    An awesome README for Eventio, our Final Project at Ironhack!
+    An awesome README for Eventio, our Final Project at Ironhack :D !
     <br />
     <a href="https://github.com/tonitoar/event.io-GENERAL-"><strong>Explore the docs »</strong></a>
     <br />
